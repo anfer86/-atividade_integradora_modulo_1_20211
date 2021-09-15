@@ -1,0 +1,139 @@
+<html>
+    
+<head> 
+ <title> Sql: Exists   </title>
+<link rel="stylesheet" href="select_exists.css">
+</head>
+
+<body>
+    <h1>SQL:EXISTS</h1>
+    <h2>SQL: EXISTS e suas aplicacoes</h2>
+<p>O EXISTS e uma clausula SQL que testa quando ha um ou mais resultados em uma SUBQUERY e retorna o valor TRUE,permitindo filtrar colunas dentro de uma subconsulta 
+ </p>
+<p> A clausula EXISTS faz uma verificacao se existe algum resultado para a subquery informada.Caso haja,o resultado
+da consulta principal e exibido. E muito comum sua utilizacao quando se deseja trazer resultados onde o valor especifico existe dentro de outra tabela.
+ </p>  
+    <p>EXISTS simplesmente testa se a consulta  interna apresenta qualquer linha.Se apresentar, a consulta externa prosegue.
+        Se nao e executada e toda a instrucao SQL nao apresenta qualquer resultado.
+   </p>
+   <p>A sintaxe de EXISTS e:
+    SELECT "nome_coluna1"
+    FROM "nome_tabela1"
+    ONDE EXISTE
+    (SELECT *
+    FROM "nome_tabela2"
+    WHERE "condicao");
+   </p>
+  <p>Note que em vez de *, pode selecionar uma ou mais colunas na consulta interna.O efeito sera indentico 
+    Vamos utilizar as mesmas tabelas  como exemplo:
+  </p>
+    <p>Tabela Store_information</p>
+    
+    <style>
+     table{
+         border-style: hidden;
+     }
+    thead{
+        background-color: rgb(90, 88, 88);
+    }
+    </style>
+    
+    
+    <table border="1"> 
+    <thead>
+        <tr> 
+            <th>Store_Nome</th>
+            <th>Sales</th>
+            <th>Txn_Date</th>
+        
+          </tr>
+        </thead>
+     <tbody>
+        <tr>
+            <td>Los Angeles</td>
+            <td>1500</td>
+            <td>07-jan-1999</td>
+              </tr>
+              <tr>
+                <td>San Diego</td>
+                <td>250</td>
+                <td>08-Jan-1999</td>
+              </tr>
+              <tr>
+               <td>Los Angeles</td>
+               <td>300</td>
+               <td>08-Jan-1999</td>
+               </tr>
+               <tr>
+                   <td>Boston</td>
+                   <td>700</td>
+                   <td>08-Jan-1999</td>
+               </tr>
+            </tbody>   
+    
+        </table>
+        
+        <p>Tabela Geography</p>
+    <style>
+       table{
+           border-style: hidden;
+       }
+       thead{
+           background-color: rgb(56, 63, 63);
+       }
+    </style>
+   
+
+<table border= "1">
+      <thead>
+    <tr>
+     <th>Region_Name</th>
+     <th>Store_Nome</th>
+       </tr>
+     </thead>
+
+ <tbody>
+    <tr>
+   <td>East</td>
+   <td>Boston</td>
+    </tr>
+    <tr>
+    <td>East</td>
+    <td>New York</td>
+    <tr>
+    <tr>
+    <td>West</td>
+    <td>Los Angeles</td>
+     </tr>
+    <tr>
+    <td>West</td>
+    <td>San Diego</td>
+    </tr>
+     </tbody>
+</table>
+  
+<p>e emitimos a seguinte consulta SQL:</p>       
+
+
+<p>SELECT SUM (Vendas) FROM Store_Information
+  WHERE EXISTS
+  (SELECT * FROM Geografia
+  WHERE Region_Name = 'West');</p>
+
+<p>Iremos obter o seguinte resultado:</p>
+
+    <h2>SUM(Sales)
+          2750
+    </h2>
+  <p>No inicio, isto pode parecer confuso porque a consulta secundaria inclui a condicao [Region_Name = 'west'],
+    embora a consulta tenha somado a lojas de todas as regioes.Apos uma inspeccao mais atenta,descobrimos que como
+    a consulta secundaria apresenta mais de 0 linhas, a condicao EXISTS e verdadeira e a condicao existente na consulta interna nao influencia a forma
+    como a consultai externa e executada.
+  </p>
+
+
+
+</body>
+    
+
+</html>

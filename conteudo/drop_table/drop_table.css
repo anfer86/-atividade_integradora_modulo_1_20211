@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(68, 63, 78);
+}
+
+th {
+    background-color: rgb(21, 4, 98);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(121, 114, 114);
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(167, 148, 148);
+}
+
+div#titulo {
+    padding-left: 35%;
+    color: rgb(141, 108, 80);
+}
+
+div#texto1 {
+    padding-left: 20%;
+    font-size: 20px;
+    color: rgb(126, 116, 73);
+}
+
+div#exemplo1 {
+    padding-left: 20%;
+    border: 15px rgb(103, 100, 109);
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+    color: rgb(167, 148, 148);
+}
+
+div#exemplo2 {
+    padding-left: 20%;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+    color: rgb(167, 148, 148);
+}
+
+div#tabela1 {
+    padding-left: 20%;
+    width: 300px;
+    padding: 50px;
+    margin: 10px;
+}
+
+div#tabela2 {
+    padding-left: 20%;
+    width: 300px;
+    padding: 50px;
+    margin: 10px;
+}
+
+div#texto2 {
+    padding-left: 20%;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+}
+
+div#rodape {
+    padding-left: 35%;
+}
+
+div#rodape2 {
+    padding-left: 15%;
+}
+
+.wrapper {
+    display: grid;
+    grid-row-gap: 250px;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 100px 100px;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Dados Textuais</title>
+    <link rel="stylesheet" href="tipo_dados_textuais.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="ifsc">IFSC - PROJETO INTEGRADOR DE BANCO E DADOS</h1>
+    </header>
+    <main></main>
+    <div id="ret1">
+        <h1 id="char">CHAR</h1>
+        <p id="char2">
+            CHAR é um tipo de dado textual utilizado em SGBD's para determinar o conteúdo de uma coluna com comprimento
+            fixo.
+            Usamos o CHAR para armazenar dados em uma coluna com um certo número de caracteres sem ultrapassar o valor
+            estabelecido.
+            Se armazenarmos apenas um caractere em uma coluna CHAR(10) por exemplo, os outros nove espaços restantes
+            serão preenchidos com espaços em branco.
+        </p>
+        <a href="#telachar">
+            <div id="buttonchar">
+                <h3>EXEMPLO</h3>
+            </div>
+        </a>
+    </div>
+    <div id="varchar">
+        <h1 id="varchar">VARCHAR</h1>
+        <p id="varchar2">VARCHAR é um tipo de dado textual utilizado em SGBD's para determinar o conteúdo de uma coluna
+            com o comprimento variável.
+            Usamos o VARCHAR para armazenar dados com tamanhos variáveis.
+            Se armazenarmos apenas um caractere em uma coluna VARCHAR(10) por exemplo, ele vai armazenar somente o
+            caractere sem acrescentar espaços em branco para completar o tamanho definido.
+        </p>
+        <a href="#telavarchar">
+            <div id="buttonvarchar">
+                <h3>EXEMPLO</h3>
+            </div>
+        </a>
+    </div>
+    <div id="text">
+        <h1 id="text2">TEXT</h1>
+        <p id="text3">TEXT é um tipo de dado textual utilizado em SGBD's para determinar o conteúdo de uma coluna com o
+            comprimento sem limite específico de caracteres.
+            Usamos TEXT para armazenar grandes quantidades de caracteres.</p>
+
+        <a href="#text4">
+            <div id="buttontext">
+                <h3>EXEMPLO</h3>
+            </div>
+        </a>
+    </div>
+
+    <div id="telavarchar">
+        <h1 id="execodigo1">Exemplo dos Códigos:</h1>
+        <p id="code1varchar">
+            create table diretor ( <br>
+            <br>
+            id_diretor int primary key,<br>
+            <br>
+            nome VARCHAR(64),<br>
+            <br>
+            cpf char(11),<br>
+            <br>
+            dt_nascimento date,<br>
+            <br>
+            pais_nascimento varchar(34)<br>
+            <br>
+            );
+        </p>
+        <p id="code2varchar">
+            create table estudio ( <br>
+            <br>
+            id_estudio int primary key,<br>
+            <br>
+            nome VARCHAR(64),<br>
+            <br>
+            descricao text,<br>
+            <br>
+            cnpj char(14)<br>
+            <br>
+            );
+        </p>
+
+        <table id="varchartable" border="5">
+            <tr>
+                <td>ID do Diretor</td>
+                <td>Nome</td>
+                <td>CPF</td>
+                <td>Data de Nascimento</td>
+                <td>País de Nascimento</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>André Pellenz</td>
+                <td>12345678911</td>
+                <td>15/07/1977</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Carlos Andrés Ferrero</td>
+                <td>12345678911</td>
+                <td>27/09/1989</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Andre Salvaro Furtado</td>
+                <td>12345678911</td>
+                <td>19/05/1978</td>
+                <td>Brasil</td>
+            </tr>
+        </table>
+
+        <a href="#header">
+            <div id="voltartopo">
+                <h3>VOLTAR PARA O TOPO</h3>
+            </div>
+        </a>
+    </div>
+    <div id="telachar">
+        <h1 id="execodigo1">Exemplo dos Códigos:</h1>
+        <p id="code1varchar">
+            create table diretor ( <br>
+            <br>
+            id_diretor int primary key,<br>
+            <br>
+            nome VARCHAR(64),<br>
+            <br>
+            cpf char(11),<br>
+            <br>
+            dt_nascimento date,<br>
+            <br>
+            pais_nascimento varchar(34)<br>
+            <br>
+            );
+        </p>
+        <p id="code2varchar">
+            create table estudio ( <br>
+            <br>
+            id_estudio int primary key,<br>
+            <br>
+            nome VARCHAR(64),<br>
+            <br>
+            descricao text,<br>
+            <br>
+            cnpj char(14)<br>
+            <br>
+            );
+        </p>
+        <table id="chartable" border="5">
+            <tr>
+                <td>
+                    CPF
+                </td>
+            </tr>
+            <tr>
+                <td>12345678911</td>
+            </tr>
+        </table>
+        <a href="#header">
+            <div id="voltartopo2">
+                <h3>VOLTAR PARA O TOPO</h3>
+            </div>
+        </a>
+    </div>
+    <div id="text4">
+        <h1 id="execodigo1">Exemplo dos Códigos:</h1>
+        <p id="code5varchar">
+            create table filmes ( <br>
+            <br>
+            id_filme int primary key, <br>
+            <br>
+            nome varchar(132), <br>
+            <br>
+            faturamento decimal (20,2), <br>
+            <br>
+            ano int(4), <br>
+            <br>
+            sinopse TEXT, <br>
+            <br>
+            id_genero int, <br>
+            <br>
+            id_diretor int, <br>
+            <br>
+            id_estudio int, <br>
+            <br>
+            foreign key (id_genero) references genero(id_genero), <br>
+            <br>
+            foreign key (id_diretor) refernces diretor(id_diretor), <br>
+            <br>
+            foreign key (id_estudio) references estudio(id_estudio) <br>
+            <br>
+            );
+        </p>
+        <p id="code6varchar">
+            create table estudio ( <br>
+            <br>
+            id_estudio int primary key,<br>
+            <br>
+            nome VARCHAR(64),<br>
+            <br>
+            descricao text,<br>
+            <br>
+            cnpj char(14)<br>
+            <br>
+            );
+        </p>
+        <table id="texttable" border="5">
+            <tr>
+                <td>
+                    Sinopse
+                </td>
+            </tr>
+            <tr>
+                <td>Em 2045, Wade Watts, assim como o resto da humanidade, prefere a realidade virtual do jogo OASIS ao
+                    mundo real.
+                    James Halliday, o excêntrico criador do jogo, morre e deixa sua fortuna inestimável para a primeira
+                    pessoa que descobrir a chave de um quebra-cabeça diabólico que ele arquitetou.
+                    Para vencer, Watts precisa abandonar a existência virtual e experimentar o amor e a realidade.
+                </td>
+            </tr>
+        </table>
+        <a href="#header">
+            <div id="voltartopo3">
+                <h3>VOLTAR PARA O TOPO</h3>
+            </div>
+        </a>
+    </div>
+
+    <footer>NICOLE - TODOS OS DIREITOS RESERVADOS 2021</footer>
+</body>
+
+</html>

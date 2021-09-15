@@ -1,0 +1,403 @@
+:root {
+    font-size: 16px;
+    font-family:monospace;
+    --text-primario: #b6b6b6;
+    --text-secundario: rebeccapurple;
+    --bg-primario: #2e085c;
+    --bg-secundario: #141418;
+}
+
+.header {
+    text-align: center;
+    padding: 4rem;
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    background-size: cover;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background: rebeccapurple;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  transition: 0.3s;
+  text-decoration: none;
+  background-color: var(--bg-secundario);
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar a {
+  text-align: center;
+  padding: 0,25rem;
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--text-primario);
+}
+
+.navbar a:hover {
+  color: var(--text-secundario);
+} 
+
+.nav-item {
+  width: 75%;
+  padding: 2rem;
+}
+
+.caixa-alter {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: var(--bg-secundario);
+    border-radius: 10px;
+    text-align: center;
+    animation-name: alter_table-name;
+    animation-duration: 5s;
+    color: white;
+    font-family: cursive;
+    position: relative;
+    animation-iteration-count: infinite;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+@keyframes alter_table-name {
+    0% {left: 0px;}
+    25% {left: 200px}
+    50% {left: 0px}
+    75% {left: -200px}
+    100% {left: 0px;}
+}
+
+.caixa-company {
+  width: 250px;
+  height: 35px;
+  margin: 0 auto;
+  background-color: var(--bg-primario);
+  border-radius: 10px;
+  text-align: center;
+  animation-name: iago-company;
+  animation-duration: 5s;
+  color: white;
+  font-family: cursive;
+  position: relative;
+  animation-iteration-count: infinite;
+  box-shadow: 10px 10px 5px rgba(44, 0, 116, 0.39);
+  transition: height 0.5s;
+}
+
+@keyframes iago-company {
+  0% {left: -500px; top: -50px; color: white;}
+  25% {left: -250px; top: -50px; color: var(--text-primario)}
+  50% {left: -500px; top: -50px; color: white;}
+  75% {left: -250px; top: -50px; color:var(--text-primario)}
+  100% {left: -500px; top: -50px; color: white}
+}
+
+#company-descri {
+  position: relative;
+  font-family: cursive;
+  visibility: hidden;
+  transition: visibility 0.1s;
+  top: -25px;
+}
+
+.caixa-company:hover{
+  height: 50px;
+}
+
+.caixa-company:hover #company-descri {
+  visibility: visible;
+}
+
+.caixa-company:not(:hover) #company-descri {
+  visibility: hidden;
+}
+
+#IFSC {
+  position: relative;
+  animation-name: IFSC-RGB;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes IFSC-RGB {
+  10% {color: white;}
+  20% {color: red;}
+  30% {color: green;}
+  40% {color: blue;}
+  50% {color: yellow;}
+  60% {color: pink;}
+  70% {color: cyan;}
+  80% {color: darkred;}
+  90% {color: darkgreen;}
+  100% {color: white;}
+}
+
+.box{
+  width: auto;
+  margin-left: 5rem;
+}
+
+.box img {
+   max-width: 100%;
+   height: auto;
+   margin: 0 auto;
+}
+
+.caixa {
+    width: 500px;
+    height: 100px;
+    margin: 0px 0px 0px -30px;
+    background-color: var(--bg-secundario);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.caixa-menor {
+    width: 280px;
+    height: 80px;
+    margin: 0px 0px 15px 25px;
+    background-color: var(--bg-primario);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.caixa-menor-1 {
+    width: 380px;
+    height: 80px;
+    margin: 0px 0px 15px 25px;
+    background-color: var(--bg-primario);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.caixa-menor-2 {
+    width: 480px;
+    height: 80px;
+    margin: 0px 0px 15px 25px;
+    background-color: var(--bg-primario);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.caixa-menor-3 {
+    width: 450px;
+    height: 45px;
+    margin: 0px 0px 15px -30px;
+    background-color: var(--bg-secundario);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.caixa-menor-4 {
+    width: 650px;
+    height: 45px;
+    margin: 0px 0px 15px -30px;
+    background-color: var(--bg-secundario);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.caixa-code {
+    width: 675px;
+    height: 45px;
+    margin: 0px 0px 15px 25px;
+    text-align: left;
+    background-color:indigo;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+.caixa-code-maior {
+    width: 805px;
+    height: 45px;
+    margin: 0px 0px 15px 25px;
+    text-align: left;
+    background-color:indigo;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.escrita-demo {
+  width: 40ch;
+  animation: escrita 2s steps(30), piscar .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+.escrita-demo-1 {
+  width: 48ch;
+  animation: escrita 2s steps(22), piscar .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+@keyframes escrita {
+  from {
+    width: 5ch
+  }
+}
+    
+@keyframes piscar {
+  50% {
+    border-color: transparent
+  }
+}
+
+.canto {
+    text-align: left;
+    font-family: monospace;
+    font-size: 35px;
+    color: var(--bg-secundario);
+}
+
+.centralizar {
+    padding: 2rem;
+}
+
+.centralizar-1 {
+    padding: 1.5rem;
+}
+
+.underline {
+  text-align: center;
+  color: white;
+}
+
+.underline:hover {
+  color: var(--text-secundario);
+}
+
+#pizza{
+  text-align: left;
+  padding: 8px;
+  background-color: var(--bg-primario);
+  color: white;
+}
+
+button {
+  background-color: var(--bg-secundario); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: monospace;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.418),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+    font-family: cursive;
+}
+
+h2 {
+    text-align: left;
+    font-size: 30px;
+    font-family: monospace;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 25px;
+  }
+  
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:var(--bg-primario);
+    color: white;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;
+}
+code {
+    padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  margin-left: 5rem;
+  padding: 1rem;
+  background-color: var(--bg-secundario);
+  color: white;
+}
+
+.descri {
+  color: var(--text-primario);
+  text-align: center;
+  font-size: 16;
+  font-family: monospace;
+}
+
+.brilho:hover {
+  color: white;
+  cursor: default;
+}
+

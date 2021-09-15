@@ -1,0 +1,67 @@
+
+    body{
+   width: 10;
+   padding: 0;
+   margin: 0;
+   margin-left: auto;
+   text-align: center;
+   margin-right: auto;
+   display: grid;
+   grid-gap: 0px; 
+   text-decoration:none;
+   grid-template-areas: 
+                        
+                        "rodape"
+                        "informação1"
+                        "informação2";
+                        
+  grid-template-columns:auto;
+  grid-template-rows: auto;
+background-image:url("imagem.png");
+background-repeat: no-repeat;
+ 
+}
+
+   
+
+   div#informação1 {
+      grid-area: informação;
+      margin: 1px;
+    padding: 20px;
+    margin: 20px auto;;
+      font-size: 20px;
+      font-family: sans-serif;
+    
+
+   }
+  
+   div#informação2 {
+    grid-area: informação;
+    margin: 1px;
+  padding: 20px;
+  margin: 200px auto;;
+    font-size: 20px;
+    font-family: sans-serif;
+  
+
+ }
+
+
+ div#rodape { 
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  width: 100%;
+ }
+ 
+ 
+
+
+
+    
+ 

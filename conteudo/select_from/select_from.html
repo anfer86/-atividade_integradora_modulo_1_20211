@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="select_from.css">
+    <title>Atividade integradora</title>
+</head>
+
+<body>
+
+ <header div id="cabecalho">
+ <h1> SQL select </h1>
+ </header>
+
+<div id="conteudo_principal">
+ <p>A linguagem SQL foi criada com o objetivo de padronizar  os comandos de manipulação de 
+    dados em SGBD´s. Conhecendo bem a linguagem, é possivel acessar os recursos básicos de 
+    qualquer banco de dados relacional como oracle, SQL server ou MYSQL, sem praticamente
+    nenhuma mudança. Nesse site veremos como utilizar o SELECT que é muito importante para as consultas SQL.
+ </p>
+
+
+ <h3> Select "Iniciante" </h3>
+ <P>O comando SELECT tem a função de retornar um conjunto de resultados de registros de uma
+    ou mais tabelas, ele recupera zero linhas ou várias linhas de uma ou mais tabelas. 
+    O comando mais básico é: select (colunas) from (nome da tabela)
+ </P>
+
+ <h3> Exemplo 1 </h3>
+   <p>Select * From tipo.
+   </p>
+
+   <p>No caso do banco de dados utilizado para fazer esse site o resultado seria:</p>
+
+   <table border="1">
+       <tr>
+           <th>id_tipo</th>
+           <th>tipo</th>
+       </tr>
+       
+      <tr>
+           <td>1</td>
+           <td>Tradicional</td>
+      </tr>
+
+      <tr>
+          <td>2</td>
+          <td>Especial</td>
+      </tr>
+
+      <tr>
+          <td>3</td>
+          <td>Doce</td>
+      </tr>
+   </table>
+
+   <p>
+    O caractere * utilizado no select significa que eu estava selecionando todas as linhas
+    e todas as colunas da tabela.
+    </p>
+
+    <h3> Exemplo 2</h3>
+
+    <p>Nesse exemplo vamos dizer para o banco de dados quais colunas nós queremos como resultado
+       da cosulta.
+    </p>
+
+    <p> O comando utilizado será: select id_pizza, nome, preço, calorias from pizza;</p>
+
+    <table border="1">
+        <tr>
+            <th>id_pizza</th>
+            <th>nome</th>
+            <th>preço</th>
+            <th>calorias</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Margherita</td>
+            <td>27.00</td>
+            <td>1500</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Calabresa</td>
+            <td>29.00</td>
+            <td>NULL</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Pepperoni</td>
+            <td>31.00</td>
+            <td>1900</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Camarão</td>
+            <td>49.00</td>
+            <td>1600</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Filé com Cheddar</td>
+            <td>50.00</td>
+            <td>2400</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Tomate Seco</td>
+            <td>44.00</td>
+            <td>1500</td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Chocolate</td>
+            <td>27.00</td>
+            <td>1900</td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Paçoca</td>
+            <td>29.00</td>
+            <td>2300</td>
+        </tr>
+    </table>
+
+    <h3>Conclusão</h3>
+
+    <p>
+       O select Faz parte da linguagem SQL, ele é utilizado nas consultas em banco da dados
+       relacionais, sua sintaxe, ou seja, a forma de se utilizar o select é:  select (colunas) from (nome da tabela).
+    </p>
+    </div>
+
+    <footer div id="rodape">
+    <h1>
+        SQL select
+    </h1>
+    </footer>
+</body>
+</html>

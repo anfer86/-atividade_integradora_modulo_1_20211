@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title> Insert Banco de Dados </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="insert.css">
+    </head>
+    <body>
+        <div id="cabecalho">
+            <h1> Comando insert Linguagem SQL </h1>
+            <p> O comando Insert, quando usado possui um "estilo base", seria este: <code>INSERT INTO (tabela) VALUES (valores para cada coluna separados por vírgula). </code> </p>
+        </div>
+        <div id="corpo">
+            <p> O insert é um comando que insere os dados determinados nas colunas respectivas.  </p>
+            <p> Um exemplo de insert na tabela a seguir: </p>
+             <p class="perto"> pizza </p>
+                <table border="1px">
+                <thead class="cinza">
+                    <th> <u> id_pizza </u> </th> 
+                    <th> nome </th>
+                    <th> preco </th>
+                    <th> calorias </th>
+                    <th> glutem </th>
+                    <th> id_tipo (FK) </th>
+                    <th> dt_hora_cadastro </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> Margherita </td>
+                        <td> 27 </td>
+                        <td> 1500 </td>
+                        <td> TRUE </td>
+                        <td> 1 </td>
+                        <td> 2021-08-27 17:00:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> Calabresa </td>
+                        <td> 29 </td>
+                        <td> null </td>
+                        <td> TRUE </td>
+                        <td> 1 </td>
+                        <td> 2021-08-28 17:05:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> Pepperoni </td>
+                        <td> 31 </td>
+                        <td> 1900 </td>
+                        <td> TRUE </td>
+                        <td> 1 </td>
+                        <td> 2021-08-29 17:10:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> Camarão </td>
+                        <td> 49 </td>
+                        <td> 1600 </td>
+                        <td> TRUE </td>
+                        <td> 2 </td>
+                        <td> 2021-08-30 17:15:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> Filé com Cheddar </td>
+                        <td> 50 </td>
+                        <td> 2400 </td>
+                        <td> TRUE </td>
+                        <td> 2 </td>
+                        <td> 2021-08-31 17:20:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> Tomate Seco </td>
+                        <td> 44 </td>
+                        <td> 1500 </td>
+                        <td> FAlSE </td>
+                        <td> 2 </td>
+                        <td> 2021-09-01 17:25:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> Chocolate </td>
+                        <td> 27 </td>
+                        <td> 1900 </td>
+                        <td> TRUE </td>
+                        <td> 3 </td>
+                        <td> 2021-09-02 17:30:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> Paçoca </td>
+                        <td> 29 </td>
+                        <td> 2300 </td>
+                        <td> TRUE </td>
+                        <td> 3 </td>
+                        <td> 2021-09-03 17:35:00 </td>
+                    </tr>
+                </tbody>
+                </table> 
+            <p> É: <code> INSERT INTO pizza VALUES (9, "Jujuba", 25, 1600, "Falso", 3, "2021-08-03 23:00"); </code> </p>
+            <ul>
+                <li> O [9] é inserido em id_pizza.</li>
+                <li> O ["Jujuba"] inserido em nome.</li>
+                <li> O [25] inserido em preco.</li>
+                <li> O [1600] inserido em calorias.</li>
+                <li> O ["FALSE"] inserido em glutem.</li>
+                <li> O [3] inserido em id_tipo, que é uma chave estrangeira mencionada com (FK), da tabela seguir:
+                    <p class="perto"> tipo </p>
+                    <table border="1px">
+                        <thead class="cinza">
+                            <th> <u> id_tipo </u> </th>
+                            <th> tipo </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1 </td>
+                                <td> Tradicional </td>
+                            </tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td> Especial </td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td> Doce </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li> O ["2021-09-04 17:40:00"] inserido em dt_hr_cadastro.</li>
+            </ul>
+            <br> Fazendo que em uma consulta, exemplo: <code> SELECT * FROM pizza; </code> <br> retorne: </br> </p>
+            <p class="perto"> pizza </p>
+            <table border="1px">
+                <thead class="cinza">
+                    <th> <u> id_pizza </u> </th> 
+                    <th> nome </th>
+                    <th> preco </th>
+                    <th> calorias </th>
+                    <th> glutem </th>
+                    <th> id_tipo (FK) </th>
+                    <th> dt_hora_cadastro </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> Margherita </td>
+                        <td> 27 </td>
+                        <td> 1500 </td>
+                        <td> TRUE </td>
+                        <td> 1 </td>
+                        <td> 2021-08-27 17:00:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> Calabresa </td>
+                        <td> 29 </td>
+                        <td> null </td>
+                        <td> TRUE </td>
+                        <td> 1 </td>
+                        <td> 2021-08-28 17:05:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> Pepperoni </td>
+                        <td> 31 </td>
+                        <td> 1900 </td>
+                        <td> TRUE </td>
+                        <td> 1 </td>
+                        <td> 2021-08-29 17:10:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> Camarão </td>
+                        <td> 49 </td>
+                        <td> 1600 </td>
+                        <td> TRUE </td>
+                        <td> 2 </td>
+                        <td> 2021-08-30 17:15:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> Filé com Cheddar </td>
+                        <td> 50 </td>
+                        <td> 2400 </td>
+                        <td> TRUE </td>
+                        <td> 2 </td>
+                        <td> 2021-08-31 17:20:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> Tomate Seco </td>
+                        <td> 44 </td>
+                        <td> 1500 </td>
+                        <td> FALSE </td>
+                        <td> 2 </td>
+                        <td> 2021-09-01 17:25:00 </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> Chocolate </td>
+                        <td> 27 </td>
+                        <td> 1900 </td>
+                        <td> TRUE </td>
+                        <td> 3 </td>
+                        <td> 2021-09-02 17:30:00 </td>
+                    </tr>
+                    <tr id="vermelho_bottom">
+                        <td> 8 </td>
+                        <td> Paçoca </td>
+                        <td> 29 </td>
+                        <td> 2300 </td>
+                        <td> TRUE </td>
+                        <td> 3 </td>
+                        <td> 2021-09-03 17:35:00 </td>
+                    </tr>
+                    <tr id="vermelho"> 
+                        <td> 9 </td>
+                        <td>  Jujuba </td>
+                        <td>  25 </td>
+                        <td> 1600 </td>
+                        <td> TRUE </td>
+                        <td>  3  </td>
+                        <td> 2021-09-04 17:40:00 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

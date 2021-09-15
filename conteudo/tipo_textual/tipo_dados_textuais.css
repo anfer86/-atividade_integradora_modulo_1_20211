@@ -1,0 +1,458 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+#header {
+
+    width: 100%;
+    height: 95px;
+    background: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+
+    background: url(mainbg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 90.6vh;
+
+}
+
+body {
+
+    font-family: sans-serif;
+
+}
+
+h1#ifsc {
+
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#ret1 {
+
+    width: 380px;
+    height: 510px;
+    background: #696969;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -790px;
+    border-radius: 20px;
+
+
+}
+
+h1#char {
+
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+p#char2 {
+
+    color: white;
+    margin-top: 50px;
+    text-align: justify;
+    font-size: 20px;
+    white-space: normal;
+    padding: 15px;
+
+}
+
+#buttonchar {
+
+    width: 250px;
+    height: 30px;
+    background: rgb(95, 95, 95);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: background .3s;
+
+}
+
+#buttonchar:hover {
+
+    cursor: pointer;
+    background: black;
+
+}
+
+#varchar {
+
+    width: 380px;
+    height: 490px;
+    background: #696969;
+    margin-top: -510px;
+    margin-left: 70px;
+    border-radius: 20px;
+
+}
+
+h1#varchar {
+
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+p#varchar2 {
+
+    color: white;
+    margin-top: -415px;
+    text-align: justify;
+    font-size: 20px;
+    white-space: normal;
+    padding: 15px;
+
+}
+
+#buttonvarchar {
+
+    width: 250px;
+    height: 30px;
+    background: rgb(95, 95, 95);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: background .3s;
+
+}
+
+#buttonvarchar:hover {
+
+    cursor: pointer;
+    background: black;
+
+}
+
+#text {
+
+    width: 380px;
+    height: 510px;
+    background: #696969;
+    float: right;
+    margin-top: -490px;
+    border-radius: 20px;
+    margin-right: 70px;
+
+}
+
+h1#text2 {
+
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+p#text3 {
+
+    color: white;
+    margin-top: 52px;
+    text-align: justify;
+    font-size: 20px;
+    white-space: normal;
+    padding: 15px;
+
+}
+
+#buttontext {
+
+    width: 250px;
+    height: 30px;
+    background: rgb(95, 95, 95);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 134px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: background .3s;
+
+}
+
+#buttontext:hover {
+
+    cursor: pointer;
+    background: black;
+
+}
+
+#telavarchar {
+
+    width: 100%;
+    height: 100vh;
+    background: #696969;
+    margin-top: 300.1px;
+    display: flex;
+
+}
+
+h1#execodigo1 {
+
+    color: white;
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+
+#code1varchar {
+
+    color: white;
+    margin-top: 180px;
+    font-size: 20px;
+    background: rgb(95, 95, 95);
+    height: 295px;
+    text-align: justify;
+    padding: 35px;
+    border-radius: 20px;
+    margin-left: -250px;
+    transition: background .3s;
+
+}
+
+#code1varchar:hover {
+
+    cursor: pointer;
+    background: rgb(114, 113, 113);
+
+}
+
+#code2varchar {
+
+    color: white;
+    margin-top: 580px;
+    font-size: 20px;
+    background: rgb(95, 95, 95);
+    height: 280px;
+    text-align: justify;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: -330px;
+    transition: background .3s;
+
+}
+
+#code2varchar:hover {
+
+    cursor: pointer;
+    background: rgb(114, 113, 113);
+
+}
+
+table#varchartable {
+
+    height: 200px;
+    margin-top: 450px;
+    margin-left: 200px;
+    width: 800px;
+    text-align: center;
+    background: rgb(95, 95, 95);
+    border-color: rgb(114, 113, 113);
+
+}
+
+td:hover {
+
+    cursor: pointer;
+    background: rgb(114, 113, 113);
+    transition: background .3s;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+#voltartopo {
+
+    width: 300px;
+    height: 20px;
+    background: rgb(95, 95, 95);
+    margin-top: 870px;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    transition: background .3s;
+
+}
+
+#voltartopo:hover {
+
+    cursor: pointer;
+    background: rgb(114, 113, 113);
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+#telachar {
+
+    width: 100%;
+    height: 100vh;
+    background: #4e4e4e;
+    display: flex;
+
+}
+
+table#chartable {
+
+    height: 70px;
+    margin-top: 525px;
+    margin-left: 200px;
+    width: 150px;
+    text-align: center;
+    background: rgb(95, 95, 95);
+    border-color: rgb(114, 113, 113);
+
+}
+
+#voltartopo2 {
+
+    width: 300px;
+    height: 20px;
+    background: rgb(95, 95, 95);
+    margin-top: 870px;
+    border-radius: 10px;
+    margin-left: 648px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    transition: background .3s;
+
+}
+
+#voltartopo2:hover {
+
+    cursor: pointer;
+    background: rgb(114, 113, 113);
+
+}
+
+#text4 {
+
+    width: 100%;
+    height: 130vh;
+    background: #696969;
+    display: flex;
+
+}
+
+#code5varchar {
+
+    color: white;
+    margin-top: 180px;
+    font-size: 20px;
+    background: rgb(95, 95, 95);
+    height: 600px;
+    text-align: justify;
+    padding: 35px;
+    border-radius: 20px;
+    margin-left: -250px;
+    transition: background .3s;
+    
+}
+
+#code6varchar {
+
+    color: white;
+    margin-top: 900px;
+    font-size: 20px;
+    background: rgb(95, 95, 95);
+    height: 280px;
+    text-align: justify;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: -550px;
+    transition: background .3s;
+
+}
+
+table#texttable {
+
+    height: 70px;
+    margin-top: 525px;
+    margin-left: 350px;
+    width: 550px;
+    text-align: center;
+    background: rgb(95, 95, 95);
+    border-color: rgb(114, 113, 113);
+
+}
+
+#voltartopo3 {
+
+    width: 300px;
+    height: 20px;
+    background: rgb(95, 95, 95);
+    margin-top: 1170px;
+    border-radius: 10px;
+    margin-right: 100px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    transition: background .3s;
+
+}
+
+#voltartopo3:hover {
+
+    cursor: pointer;
+    background: rgb(114, 113, 113);
+
+}
+
+footer {
+
+    background: rgb(95, 95, 95);
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    height: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

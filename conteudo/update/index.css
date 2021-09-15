@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    background-image: url(img/Backgrounds/Plano\ de\ fundo\ Principal.jpg);
+    background-size: cover;
+
+
+}
+
+footer{
+    background: #272727; 
+    padding: 50px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+   z-index: 1;
+}
+
+.Coluna1{
+    color: blanchedalmond;
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.Coluna2{
+    color: blanchedalmond;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Coluna3{
+    
+    color: blanchedalmond;
+    position: absolute;
+    top: 52%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+.barra-inicial {
+    background: #272727;
+    padding: 50px;
+    width: 100%;
+    
+}
+
+#icone-ifsc {
+    position: absolute;
+    top: 0.1%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.linha-vertical2{
+    top: 20px;
+    height: 70px;
+    border-left: 2px solid;
+    color: #1b1b1b;
+    opacity: 100%;
+}
+
+#linha-rodape1{
+position: absolute;
+top: 50%;
+left: 67%;
+transform: translate(-50%, -50%);
+}
+#linha-rodape2{
+ position: absolute;
+ top: 50%;
+ left: 24%;
+ transform: translate(-50%, -50%);
+  }
+  #linha-rodape3{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+}
+   
+    
+
+
+
+
+
+
+
+
+
+
+#titulo-1 {
+    font-family: BlinkMacSystemFont;
+    color: #000000;
+    position: absolute; 
+    top:20%;
+    left:21%;
+    transform: translate(-50%, -50%);
+}
+
+#texto-1 {
+    font-family: BlinkMacSystemFont;
+    color: #000000;
+    position: absolute; 
+    top:50%;
+    left:15%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#conceito-inicial {
+    font-family: candara;
+    color: #111;
+    position: absolute; 
+    top:35%;
+    left:35%;
+    transform: translate(-50%, -50%);
+}
+#conceito{
+
+    font-family: candara;
+    color: rgb(54, 54, 54);
+    position: absolute; 
+    top:77%;
+    left:22%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+#exemplos{
+    font-family: candara;
+    color: rgb(54, 54, 54);
+    position: absolute; 
+    top:95%;
+    left:13%;
+    transform: translate(-50%, -50%);
+
+}
+
+#exemplo_1{font-family: candara;
+    color: rgb(54, 54, 54);
+    position: absolute; 
+    top:143%;
+    left:18%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+#exemplo_2{
+
+    font-family: candara;
+    color: rgb(54, 54, 54);
+    position: absolute; 
+    top:180%;
+    left:18%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#icone-1 {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+#icone-2 {
+    position: absolute;
+    top: 117%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#icone-3 {
+    position: absolute;
+    top: 200%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+    z-index: -1;
+}
+
+
+#exemplo1{
+    position: absolute;
+    top: 157%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+
+}
+
+#exemplo2{
+    position: absolute;
+    top: 195%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+#tabela_1{
+    position: absolute;
+    top: 155%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+
+}
+#tabela_2{
+    position: absolute;
+    top: 190%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+
+#pizza{
+    font-family: candara;
+    position: absolute;
+    top: 97%;
+    left: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+    color: rgb(128, 128, 128);
+}
+
+
+a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+  }
+
+
+
+a#atual {
+    color:#808080;
+}
+
