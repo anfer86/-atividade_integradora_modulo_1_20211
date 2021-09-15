@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(243, 240, 201);
+}
+
+div.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b87a08;
+}
+
+div.operador {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1d609e;
+}
+
+ul.click {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1c2b05;
+}
+
+p.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1c2b05;
+}
+
+div.exempl {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1c2b05;
+}
+
+table.table {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 65%;
+  }
+  
+tr:nth-child(even) {
+    background-color: #c5a0f0;
+  }
+
+th, td {
+      padding: 5px 10px;
+  }
+
+  
+
+
+

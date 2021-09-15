@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade Integradora</title>
+        <link rel="stylesheet" type="text/css" href="select_all_any.css">
+    </head>
+
+    <body>
+            <img src="images/ifsc lages.png" class="ifsc"> 
+            <br>
+            <br>
+            <br>
+            
+            <img src="images/project.png" all="image" height="60" width="60">
+            <br>
+
+        <div class="title">
+            <h2>Atividade Integradora - Módulo 1 - Turma 2021/1 </h2> 
+        </div>
+            
+            <p class="text"> Há operadores lógicos que são utilizados e podemos citar os operadores <b>ANY</b> e <b>ALL</b>. Ambos comparam um valor escalar com resultado de uma subconsulta que retorne uma única coluna e com a utilização de qualquer um dos operadores de comparação. Veja abaixo </p>
+
+        <table>
+            <tr>
+                <td>=</td>
+                <td>igual a</td>
+            </tr>
+            <tr>
+                <td>></td>
+                <td>maior do que</td>
+            </tr>
+            <tr>
+                <td>>=</td>
+                <td>maior ou igual a</td>
+            </tr>
+            <tr>
+                <td><</td>
+                <td>menor do que</td>
+            </tr>
+            <tr>
+                <td><=</td>
+                <td>menor ou igual a</td>
+            </tr>
+            <tr>
+                <td>< ></td>
+                <td>diferente de</td>
+            </tr>
+        </table>
+
+         <div class="operador">   
+            <p><b>Operador ANY</b></p>
+
+            <ul class="click">
+                <li>retorna um valor booleano como resultado</li>
+                <li>retorna verdadeiro se qualquer um dos valores da subconsulta atender à condição</li>
+            </ul>
+             
+            
+            <p>ANY significa que a condição será verdadeira se operação for verdadeira para qualquer um dos valores do intervalo</p>
+
+
+            <p><b> Operador ALL</b></p>
+
+            <ul class="click">
+                <li>retorna verdadeiro se todos os valores da subconsulta atenderem à condição</li>
+                <li>é usado com SELECT, WHERE e HAVING</li>
+            </ul>          
+
+            <p>ALL significa que a condição será verdadeira se operação for verdadeira para todos os valores no intervalo. </p>
+            
+        </div> 
+
+        <br>
+
+        <p class="text"> Criar as tabelas para armazenar em cada uma das tabelas:</p>
+        
+        <div class="title">
+            Comando SQL - DDL
+            <p>
+                
+            </p>
+        </div>
+
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style> 
+
+        <h3>TIPO</h3>
+    <table class="table">
+        <tr>
+            <th>id_tipo</th>
+            <th>tipo</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tradicional</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Especial</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Doce</td>
+        </tr>
+    </table>
+<br>
+        <h3>PIZZA</h3>
+    <table class="table">
+        <tr>
+            <th>id_pizza</th>
+            <th>nome</th>
+            <th>preço</th>
+            <th>calorias</th>
+            <th>glutem</th>
+            <th>id_tipo (FK)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Margherita</td>
+            <td>27</td>
+            <td>1500</td>
+            <td>TRUE</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Calabresa</td>
+            <td>29</td>
+            <td>null</td>
+            <td>TRUE</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Camarão</td>
+            <td>49</td>
+            <td>1600</td>
+            <td>TRUE</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Chocolate</td>
+            <td>27</td>
+            <td>1900</td>
+            <td>TRUE</td>
+            <td>3</td>
+        </tr>
+    </table>
+<br>
+        <h3>INGREDIENTE</h3>
+    <table class="table">
+        <tr>
+            <th>id_ingrediente</th>
+            <th>nome</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Molho de Tomate</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mussurela</td>
+        <tr>
+            <td>3</td>
+            <td>Manjerição</td>
+        </tr>
+    </table>
+     
+        <h3>PIZZA_INGREDIENTE</h3>
+    <table class="table">
+        <tr>
+            <th>id_pizza</th>
+            <th>id_ingrediente</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+<br>
+    <div class="title">
+        Comando SQL - DQL - operador ANY
+    </div>
+    <p class="text">Qual pizza Especial tem o mesmo preço ou é mais barata que alguma pizza Tradicional?</p>
+
+
+    <p>
+    <table>  
+        <tr>
+            <td>SELECT</td>
+            <td>FROM</td>
+            <td>INNER JOIN</td>
+            <td>WHERE</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>pizza</td>
+            <td>tipo ON pizza.id_tipo=tipo.id_tipo</td>
+            <td>tipo ='Especial' AND preco <b> <= ANY </b>(SELECT preco FROM pizza INNER JOIN tipo ON pizza.id_tipo=tipo.id_tipo WHERE tipo ='Tradicional')</td>
+        </tr>
+    </table> 
+    </p>
+
+    <p class="text">Resultado:</p>
+
+    <table>
+        <tr>
+            <th>Camarão</th>
+            <th>49</th>
+        </tr>
+    </table>
+    
+<br>
+    <div class="title">
+        Comando SQL - DQL - operador ALL
+    </div>
+    <p class="text">Qual pizza Especial é mais cara que todas as pizzas do tipo Tradicional?</p>
+
+    <p>
+    <table>  
+        <tr>
+            <td>SELECT</td>
+            <td>FROM</td>
+            <td> INNER JOIN</td>
+            <td>WHERE</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>pizza</td>
+            <td>tipo ON pizza.id_tipo=tipo.id_tipo</td>
+            <td>tipo ='Especial' AND preco <b> > ALL </b> (SELECT preco FROM pizza INNER JOIN tipo ON pizza.id_tipo=tipo.id_tipo WHERE tipo ='Tradicional')</td>
+        </tr>
+        </table>    
+    </p>
+
+    <p class="text">Resultado:</p>
+    <table>
+        <tr>
+            <th>Camarão</th>
+            <th>49</th>
+        </tr>
+    </table>
+
+
+
+                        
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </body>
+</html>
