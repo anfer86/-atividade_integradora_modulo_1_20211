@@ -1,0 +1,297 @@
+:root {
+
+    --corFundo: #272C38;
+    --cor1: #fff;
+    --corHover: #707070;
+
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+nav {
+
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    margin-top: -55px;
+    font-size: 18px;
+
+
+}
+
+#logo {
+
+    color: white;
+    font-size: 30px;
+    margin-left: 120px;
+    padding: 25px;
+
+}
+
+#header {
+
+    width: 100%;
+    height: 120px;
+    /*background: #272C38;*/
+    position: fixed;
+
+}
+
+.dp-menu ul {
+
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.dp-menu ul {
+
+    /*background: var(--corFundo);*/
+    opacity: 100%;
+
+
+}
+
+.dp-menu ul li {
+
+    display: inline;
+    position: relative;
+
+}
+
+.dp-menu ul li a {
+
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: background 0.3s;
+
+}
+
+.dp-menu ul li a:hover {
+
+    background-color: var(--corHover);
+    opacity: 50%;
+
+}
+
+.dp-menu ul ul {
+
+    display: none;
+    position: absolute;
+    left: 0;
+
+}
+
+.dp-menu ul li:hover ul {
+
+    display: block;
+
+}
+
+.dp-menu ul ul {
+
+    width: 250px;
+
+}
+
+.dp-menu ul ul li a {
+
+    display: block;
+
+}
+
+main {
+
+    background: url(bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+
+}
+
+#priv {
+
+    width: 100%;
+    height: 100vh;
+    background: #272C38;
+    display: flex;
+
+}
+
+#janelapriv {
+
+    width: 1800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+
+}
+
+#priv2 {
+
+    color: white;
+    text-align: justify;
+    font-size: 30px;
+
+}
+
+#forms {
+
+    background: #707070;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+h1,
+h2 {
+
+    font-size: 3rem;
+    color: aliceblue;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+h1::before {
+
+    content: "📧";
+    display: block;
+
+}
+
+h2::before {
+
+    content: "🙈";
+    display: block;
+
+}
+
+h2 {
+
+    color: black;
+    margin-top: 340px;
+
+}
+
+#content {
+
+    background: #272C38;
+
+}
+
+.form {
+
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+    margin-left: 30px;
+
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+
+    display: block;
+    width: 100%;
+
+}
+
+.form label {
+
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+
+}
+
+.form input,
+.form textarea {
+
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+
+}
+
+.form textarea {
+
+    min-height: 13rem;
+    resize: vertical;
+
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+
+    outline: none;
+    border-color: #272C38;
+    box-shadow: 0 0 0 3px #272C38;
+
+}
+
+.form button {
+
+    display: block;
+    padding: 1rem;
+    background: #272C38;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.form button:hover,
+.form button:focus {
+
+    outline: none;
+    background: #171A21;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+footer {
+
+    background: #29303E;
+    font-size: 14px;
+    color: #737373;
+    text-align: center;
+    height: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

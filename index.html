@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Página Princpal</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <p id="logo">IFSC - ATIVIDADE INTEGRADORA DE BANCO DE DADOS E INTRODUÇÃO A PROGRAMAÇÃO</p>
+        <nav class="dp-menu">
+            <ul>
+                <li><a href="#main">Início</a></li>
+                <li><a href="#">Mais Sobre os Projetos</a>
+                    <ul id="ul-dp">
+                        <li><a href="#">Inner Join</a></li>
+                        <li><a href="#">All e Any</a></li>
+                        <li><a href="#">Exists</a></li>
+                        <li><a href="#">In</a></li>
+                        <li><a href="#">Group By e Having</a></li>
+                        <li><a href="#">Limit</a></li>
+                        <li><a href="#">Order By</a></li>
+                        <li><a href="#">Operadores Lógicos</a></li>
+                        <li><a href="#">Operadores Relacionais</a></li>
+                        <li><a href="#">Select From</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Update</a></li>
+                        <li><a href="#">Insert</a></li>
+                        <li><a href="#">Drop Table</a></li>
+                        <li><a href="#">Alter Table</a></li>
+                        <li><a href="#">Tipo de Dado Serial</a></li>
+                        <li><a href="#">Tipo de Dado Booleano</a></li>
+                        <li><a href="#">Tipo de Dados de Data</a></li>
+                        <li><a href="#">Tipo de Dados Numéricos</a></li>
+                        <li><a href="#">Tipo de Dados Textuais</a></li>
+                        <li><a href="#">Create Table</a></li>
+                    </ul>
+                <li><a href="#priv">Políticas de Privacidade</a></li>
+                <li><a href="#forms">Contato</a></li>
+        </nav>
+    </header>
+    <main id="main"></main>
+    
+    <div id="priv">
+        <div id="janelapriv">
+            <p id="priv2">
+                ESSES SÃO OS TERMOS DE PRIVACIDADE DA PÁGINA:
+                <br>
+                <br>
+                É a partir do seu consentimento que tratamos os seus dados pessoais. O consentimento é a manifestação
+                livre, informada e inequívoca pela qual você autoriza a M&M Company a tratar seus
+                dados.
+
+                Assim, em consonância com a Lei Geral de Proteção de Dados, seus dados só serão coletados, tratados e
+                armazenados mediante prévio e expresso consentimento.
+
+                O seu consentimento será obtido de forma específica para cada finalidade acima descrita, evidenciando o
+                compromisso de transparência e boa-fé da M&M Company para com seus
+                usuários/clientes, seguindo as regulações legislativas pertinentes.
+
+                Ao utilizar os serviços da M&M Company e fornecer seus dados pessoais, você está
+                ciente e consentindo com as disposições desta Política de Privacidade, além de conhecer seus direitos e
+                como exercê-los.
+
+                A qualquer tempo e sem nenhum custo, você poderá revogar seu consentimento.
+
+                É importante destacar que a revogação do consentimento para o tratamento dos dados pode implicar a
+                impossibilidade da performance adequada de alguma funcionalidade do site que dependa da operação. Tais
+                consequências serão informadas previamente.
+            </p>
+        </div>
+    </div>
+    <div id="forms">
+        <h1>Formulário de Contato</h1>
+        <form action="https://formsubmit.co/contatovaldemirobarros@gmail.com" method="POST" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome." required>
+            <label for="name">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email." required>
+            <label for="name">Mensagem</label>
+            <textarea name="message" id="message" placeholder="Digite aqui sua mensagem."></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500//obrigado.html">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+    <footer>IFSC 2021 - TODOS OS DIREITOS RESERVADOS | Powered by M&M Company</footer>
+
+</body>
+
+
+</html>
